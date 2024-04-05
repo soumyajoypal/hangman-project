@@ -31,6 +31,7 @@ function loadBlanks(word) {
     for (let i = 0; i < word.word.length; i++) {
         const blanks = document.createElement('div');
         blanks.classList.add('blanks');
+        blanks.setAttribute('data-blank-key', word.word.charAt(i));
         answer.appendChild(blanks);
     }
     hint.innerHTML = word.hint;
@@ -54,6 +55,26 @@ async function loadWord() {
     }
 }
 loadWord();
+
+// Make Char for the blanks to fill them
+function fillBlank(key, blankArray, index) {
+    const blank = blankArray[index];
+    const char = document.createElement('div');
+    char.classList.add('char');
+    char.innerHTML = `${key}`;
+    blank.appendChild(char);
+}
+
+// To load the blanks correctly for the present keys
+function putKeys(key) {
+    const blankArray = document.querySelectorAll('.blanks');
+    blankArray.forEach((value, index) => {
+        const val = value.dataset.blankKey;
+        if (val == key) {
+            fillBlank(key, blankArray, index);
+        }
+    })
+}
 
 // Counting the number of guesses and updating the hangman
 function guessNumber() {
@@ -81,11 +102,7 @@ function getKey(key) {
         getKey(key);
     });
     if (check(key.innerHTML.toLowerCase())) {
-        const blanks = document.querySelector('.blanks');
-        const char = document.createElement('div');
-        char.classList.add('char');
-        char.innerHTML = `${key.innerHTML}`;
-        blanks.appendChild(char);
+        putKeys(key.innerHTML.toLowerCase());
         return;
     }
     guessNumber();
@@ -105,3 +122,10 @@ function createKeys() {
     }
 }
 createKeys();
+
+
+
+
+
+
+
