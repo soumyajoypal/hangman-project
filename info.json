@@ -1,25 +1,764 @@
 {
-    "words": [
+  "words": [
       {
-        "word": "banana",
-        "hint": "A yellow fruit"
+          "word": "banana",
+          "hint": "A yellow fruit"
       },
       {
-        "word": "elephant",
-        "hint": "A large animal with a trunk"
+          "word": "elephant",
+          "hint": "A large animal with a trunk"
       },
       {
-        "word": "mountain",
-        "hint": "A large landform that rises above the surrounding land"
+          "word": "mountain",
+          "hint": "A large landform that rises above the surrounding land"
       },
       {
-        "word": "computer",
-        "hint": "An electronic device for storing and processing data"
+          "word": "computer",
+          "hint": "An electronic device for storing and processing data"
       },
       {
-        "word": "guitar",
-        "hint": "A musical instrument with strings"
+          "word": "guitar",
+          "hint": "A musical instrument with strings"
+      },
+      {
+          "word": "sunflower",
+          "hint": "A tall, yellow flower that follows the sun"
+      },
+      {
+          "word": "bicycle",
+          "hint": "A two-wheeled vehicle that you ride by pedaling"
+      },
+      {
+          "word": "pizza",
+          "hint": "A round, flatbread topped with cheese, sauce, and various toppings"
+      },
+      {
+          "word": "ocean",
+          "hint": "A vast body of saltwater that covers most of the Earth's surface"
+      },
+      {
+          "word": "book",
+          "hint": "A written or printed work consisting of pages glued or sewn together along one side"
+      },
+      {
+          "word": "dragon",
+          "hint": "A mythical creature typically depicted as a large, serpentine creature with wings and the ability to breathe fire"
+      },
+      {
+          "word": "tree",
+          "hint": "A woody perennial plant that typically has a single stem or trunk and bears lateral branches"
+      },
+      {
+          "word": "rocket",
+          "hint": "A cylindrical projectile that can be propelled to a great height or distance by the combustion of its contents"
+      },
+      {
+          "word": "chocolate",
+          "hint": "A sweet, usually brown food preparation of roasted and ground cacao seeds"
+      },
+      {
+          "word": "basketball",
+          "hint": "A team sport in which two teams, typically of five players each, compete to score points by shooting a ball through the opposing team's hoop"
+      },
+      {
+          "word": "rainbow",
+          "hint": "An arc of colors formed in the sky opposite the sun, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere"
+      },
+      {
+          "word": "airplane",
+          "hint": "A powered flying vehicle with fixed wings and a weight greater than that of the air it displaces"
+      },
+      {
+          "word": "flower",
+          "hint": "The seed-bearing part of a plant, consisting of reproductive organs (stamens and carpels) that are typically surrounded by a brightly colored corolla"
+      },
+      {
+          "word": "telephone",
+          "hint": "A system for transmitting voices over a distance using wire or radio, typically using a handset with a microphone and speaker"
+      },
+      {
+          "word": "moon",
+          "hint": "The natural satellite of the Earth, visible (chiefly at night) by reflected light from the sun"
+      },
+      {
+          "word": "car",
+          "hint": "A road vehicle typically with four wheels, powered by an internal combustion engine and able to carry a small number of people"
+      },
+      {
+          "word": "dog",
+          "hint": "A domesticated carnivorous mammal that typically has a long snout, an acute sense of smell, and a barking, howling, or whining voice"
+      },
+      {
+          "word": "cat",
+          "hint": "A small domesticated carnivorous mammal with soft fur, a short snout, and retractile claws"
+      },
+      {
+          "word": "fire",
+          "hint": "The state of burning combustion, typically producing heat and light"
+      },
+      {
+          "word": "camera",
+          "hint": "An optical instrument for recording or capturing images"
+      },
+      {
+          "word": "train",
+          "hint": "A connected series of railroad cars moved by a locomotive or by integral motors"
+      },
+      {
+          "word": "house",
+          "hint": "A building for human habitation, especially one that is lived in by a family or small group of people"
+      },
+      {
+          "word": "ship",
+          "hint": "A large boat for transporting people or goods by sea"
+      },
+      {
+          "word": "pen",
+          "hint": "An instrument for writing or drawing with ink, typically consisting of a metal nib or ball, or a nylon tip, fitted into a metal or plastic holder"
+      },
+      {
+          "word": "apple",
+          "hint": "The round fruit of a tree of the rose family, which typically has thin red or green skin and crisp flesh"
+      },
+      {
+          "word": "clock",
+          "hint": "An instrument for measuring and indicating time, typically by hands on a round dial or by displayed figures"
+      },
+      {
+          "word": "horse",
+          "hint": "A large plant-eating domesticated mammal with solid hoofs and a flowing mane and tail, used for riding, racing, and to carry and pull loads"
+      },
+      {
+          "word": "football",
+          "hint": "A game played by two teams of eleven players with a round ball that may not be touched with the hands or arms during play except by the goalkeeper"
+      },
+      {
+          "word": "cookie",
+          "hint": "A small sweet cake, typically round, flat, and crisp"
+      },
+      {
+          "word": "pencil",
+          "hint": "A narrow cylinder or strip of wood, graphite, or other material used for writing or drawing"
+      },
+      {
+          "word": "desk",
+          "hint": "A piece of furniture with a flat or sloped surface and typically with drawers, at which one can read, write, or do other work"
+      },
+      {
+          "word": "spider",
+          "hint": "An eight-legged predatory arachnid with an unsegmented body consisting of a fused head and thorax and a rounded abdomen"
+      },
+      {
+          "word": "robot",
+          "hint": "A machine capable of carrying out a complex series of actions automatically, especially one programmable by a computer"
+      },
+      {
+          "word": "shoe",
+          "hint": "A covering for the foot, typically made of leather, having a sturdy sole and not reaching above the ankle"
+      },
+      {
+          "word": "music",
+          "hint": "Vocal or instrumental sounds (or both) combined in such a way as to produce beauty of form, harmony, and expression of emotion"
+      },
+      {
+          "word": "beach",
+          "hint": "A pebbly or sandy shore, especially by the ocean between high- and low-water marks"
+      },
+      {
+          "word": "lamp",
+          "hint": "A device for giving light, either one consisting of an electric bulb together with its holder"
+      },
+      {
+          "word": "door",
+          "hint": "A hinged, sliding, or revolving barrier at the entrance to a building, room, or vehicle, or in the framework of a cupboard"
+      },
+      {
+          "word": "window",
+          "hint": "An opening in the wall or roof of a building or vehicle, typically fitted with glass in a frame to admit light or air and allow people to see out"
+      },
+      {
+          "word": "mirror",
+          "hint": "A reflective surface, now typically of glass coated with a metal amalgam, that reflects a clear image"
+      },
+      {
+          "word": "cloud",
+          "hint": "A visible mass of condensed water vapor floating in the atmosphere, typically high above the ground"
+      },
+      {
+          "word": "garden",
+          "hint": "A piece of ground, often near a house, used for growing flowers, fruit, or vegetables"
+      },
+      {
+          "word": "chair",
+          "hint": "A separate seat for one person, typically with a back and four legs"
+      },
+      {
+          "word": "key",
+          "hint": "A small piece of shaped metal with incisions cut to fit the wards of a particular lock, which is inserted into a lock and turned to open or close it"
+      },
+      {
+          "word": "wallet",
+          "hint": "A pocket-sized, flat, folding holder for money and plastic cards"
+      },
+      {
+          "word": "hat",
+          "hint": "A shaped covering for the head, typically with a crown and brim"
+      },
+      {
+          "word": "glove",
+          "hint": "A covering for the hand worn for protection against cold or dirt and typically having separate parts for each finger and the thumb"
+      },
+      {
+          "word": "ball",
+          "hint": "A solid or hollow spherical or egg-shaped object that is kicked, thrown, or hit in a game"
+      },
+      {
+          "word": "orange",
+          "hint": "A round juicy citrus fruit with a tough bright reddish-yellow rind"
+      },
+      {
+          "word": "banana",
+          "hint": "A long curved fruit which grows in clusters and has soft pulpy flesh and yellow skin when ripe"
+      },
+      {
+          "word": "kiwi",
+          "hint": "A flightless bird native to New Zealand, with small wings, a long bill, and brown plumage"
+      },
+      {
+          "word": "strawberry",
+          "hint": "A sweet soft red fruit with a seed-studded surface"
+      },
+      {
+          "word": "pineapple",
+          "hint": "A large tropical fruit with a tough orange skin and sweet yellow flesh"
+      },
+      {
+          "word": "watermelon",
+          "hint": "A large melon with a hard green rind and sweet watery red or occasionally yellowish pulp"
+      },
+      {
+          "word": "melon",
+          "hint": "The large round fruit of a plant of the gourd family, with sweet pulpy flesh and many seeds"
+      },
+      {
+          "word": "pear",
+          "hint": "A sweet yellowish- or brownish-green edible fruit that is typically narrower and firmer than a peach, with juicy flesh"
+      },
+      {
+          "word": "grape",
+          "hint": "A berry, typically green (classified as white), purple, red, or black, growing in clusters on a grapevine, eaten as fruit, and used in making wine"
+      },
+      {
+          "word": "blueberry",
+          "hint": "A small sweet dark-blue fruit of a North American shrub, often found wild"
+      },
+      {
+          "word": "cherry",
+          "hint": "A small, round stone fruit that is typically bright or dark red"
+      },
+      {
+          "word": "plum",
+          "hint": "A soft, round, smooth-skinned fruit with sweet flesh and a flattish pointed stone, especially a plum tree fruit"
+      },
+      {
+          "word": "apricot",
+          "hint": "A juicy, soft fruit, resembling a small peach, of an orange-yellow color"
+      },
+      {
+          "word": "peach",
+          "hint": "A round, juicy fruit with sweet yellow flesh and downy pinkish-yellow skin"
+      },
+      {
+          "word": "apple",
+          "hint": "The round fruit of a tree of the rose family, which typically has thin red or green skin and crisp flesh"
+      },
+      {
+          "word": "tomato",
+          "hint": "A glossy red, or occasionally yellow, pulpy edible fruit that is typically eaten as a vegetable or in salad"
+      },
+      {
+          "word": "lettuce",
+          "hint": "A leafy green vegetable used in salads and sandwiches"
+      },
+      {
+          "word": "cucumber",
+          "hint": "A long, green-skinned fruit with watery flesh, usually eaten raw in salads or pickled"
+      },
+      {
+          "word": "carrot",
+          "hint": "A tapering orange-colored root eaten as a vegetable"
+      },
+      {
+          "word": "onion",
+          "hint": "An edible bulb with a pungent taste and smell, composed of several concentric layers, used in cooking"
+      },
+      {
+          "word": "potato",
+          "hint": "A starchy plant tuber that is one of the most important food crops, cooked and eaten as a vegetable"
+      },
+      {
+          "word": "garlic",
+          "hint": "A strong-smelling pungent-tasting bulb, used as a flavoring in cooking and in herbal medicine"
+      },
+      {
+          "word": "broccoli",
+          "hint": "A cabbage of a variety similar to the cauliflower, bearing heads of green or purplish flower buds"
+      },
+      {
+          "word": "spinach",
+          "hint": "A widely cultivated edible Asian plant of the goosefoot family, with large, dark green leaves that are eaten raw or cooked as a vegetable"
+      },
+      {
+          "word": "cabbage",
+          "hint": "A cultivated plant eaten as a vegetable, having thick green or purple leaves surrounding a spherical heart or head of young leaves"
+      },
+      {
+          "word": "banana",
+          "hint": "A long curved fruit which grows in clusters and has soft pulpy flesh and yellow skin when ripe"
+      },
+      {
+          "word": "kiwi",
+          "hint": "A small flightless bird native to New Zealand, with small wings and a long thin bill"
+      },
+      {
+          "word": "penguin",
+          "hint": "A large flightless seabird of the southern hemisphere, with black upperparts and white underparts and wings developed into flippers for swimming"
+      },
+      {
+          "word": "ostrich",
+          "hint": "A flightless swift-running African bird with a long neck, long legs, and two toes on each foot"
+      },
+      {
+          "word": "parrot",
+          "hint": "A brightly colored tropical bird with a curved bill and typically with the ability to mimic human speech"
+      },
+      {
+          "word": "flamingo",
+          "hint": "A tall wading bird with mainly pink or scarlet plumage and long legs and neck"
+      },
+      {
+          "word": "rooster",
+          "hint": "A male domestic fowl, especially a young one"
+      },
+      {
+          "word": "duck",
+          "hint": "A waterbird with a broad blunt bill, short legs, webbed feet, and a waddling gait"
+      },
+      {
+          "word": "turkey",
+          "hint": "A large mainly domesticated bird raised for its meat"
+      },
+      {
+          "word": "goose",
+          "hint": "A waterbird with a long neck, short legs, webbed feet, and a loud honking call"
+      },
+      {
+          "word": "dolphin",
+          "hint": "A small gregarious toothed whale that typically has a beaklike snout and a curved fin on the back"
+      },
+      {
+          "word": "whale",
+          "hint": "A very large marine mammal with a streamlined hairless body, a horizontal tail fin, and a blowhole on top of the head for breathing"
+      },
+      {
+          "word": "shark",
+          "hint": "A long-bodied chiefly marine fish with a cartilaginous skeleton, a prominent dorsal fin, and toothlike scales"
+      },
+      {
+          "word": "octopus",
+          "hint": "A cephalopod mollusk with eight sucker-bearing arms, a soft sac-like body, strong beaklike jaws, and no internal shell"
+      },
+      {
+          "word": "jellyfish",
+          "hint": "A free-swimming marine coelenterate with a jellylike bell- or saucer-shaped body that is typically transparent and has stinging tentacles around the edge"
+      },
+      {
+          "word": "seahorse",
+          "hint": "A small marine fish that has a prehensile tail, an elongated snout, and a head and neck suggestive of a horse"
+      },
+      {
+          "word": "lobster",
+          "hint": "A large marine crustacean with a cylindrical body, stalked eyes, and the first of its five pairs of limbs modified as pincers"
+      },
+      {
+          "word": "crab",
+          "hint": "A marine crustacean with a broad carapace, stalked eyes, and five pairs of legs, the first of which are modified as pincers"
+      },
+      {
+          "word": "starfish",
+          "hint": "A marine echinoderm with a somewhat star-shaped body and typically five arms, which radiate from a central disk"
+      },
+      {
+          "word": "turtle",
+          "hint": "A slow-moving reptile with a shell into which it can retract its head and thick scaly skin"
+      },
+      {
+          "word": "frog",
+          "hint": "A tailless amphibian with a short squat body, moist smooth skin, and very long hind legs for leaping"
+      },
+      {
+          "word": "lizard",
+          "hint": "A reptile that typically has a long body and tail, four legs, movable eyelids, and a rough scaly or spiny skin"
+      },
+      {
+          "word": "snake",
+          "hint": "A long limbless reptile that has no eyelids, a short tail, and jaws that are capable of considerable extension"
+      },
+      {
+          "word": "crocodile",
+          "hint": "A large predatory semiaquatic reptile with long jaws, long tail, short legs, and a horny textured skin"
+      },
+      {
+          "word": "tiger",
+          "hint": "A very large solitary cat with a yellow-brown coat striped with black, native to the forests of Asia but becoming increasingly rare"
+      },
+      {
+          "word": "lion",
+          "hint": "A large tawny-colored cat that lives in prides, found in Africa and northwestern India. The male has a flowing shaggy mane and takes little part in hunting"
+      },
+      {
+          "word": "leopard",
+          "hint": "A large solitary cat that has a fawn or brown coat with black spots, native to the forests of Africa and southern Asia"
+      },
+      {
+          "word": "cheetah",
+          "hint": "A large slender spotted cat found in Africa and parts of Asia. It is the fastest animal on land"
+      },
+      {
+          "word": "rhinoceros",
+          "hint": "A large, heavily built plant-eating mammal with one or two horns on the nose and thick folded skin, native to Africa and southern Asia"
+      },
+      {
+          "word": "elephant",
+          "hint": "A heavy plant-eating mammal with a prehensile trunk, long curved ivory tusks, and large ears, native to Africa and southern Asia"
+      },
+      {
+          "word": "hippopotamus",
+          "hint": "A large thick-skinned semiaquatic African mammal, with massive jaws and large tusks. It is the third-largest living land mammal"
+      },
+      {
+          "word": "giraffe",
+          "hint": "A large African mammal with a very long neck and forelegs, having a coat patterned with brown patches separated by lighter lines"
+      },
+      {
+          "word": "zebra",
+          "hint": "An African wild horse with black-and-white stripes and an erect mane"
+      },
+      {
+          "word": "kangaroo",
+          "hint": "A large plant-eating marsupial with a long powerful tail and strongly developed hind limbs that enable it to travel by leaping"
+      },
+      {
+          "word": "koala",
+          "hint": "A bearlike arboreal Australian marsupial that has thick gray fur and feeds on eucalyptus leaves"
+      },
+      {
+          "word": "panda",
+          "hint": "A large bearlike mammal with characteristic black and white markings, native to certain mountain forests of central and western China. It feeds almost entirely on bamboo"
+      },
+      {
+          "word": "wolf",
+          "hint": "A wild carnivorous mammal of the dog family, living and hunting in packs. It is native to both Eurasia and North America"
+      },
+      {
+          "word": "fox",
+          "hint": "A carnivorous mammal of the dog family with a pointed muzzle and bushy tail, proverbial for its cunning"
+      },
+      {
+          "word": "bear",
+          "hint": "A large, heavy mammal with thick fur and a very short tail. Bears are omnivorous, and they hibernate in winter"
+      },
+      {
+          "word": "monkey",
+          "hint": "A small to medium-sized primate that typically has a long tail, most kinds of which live in trees in tropical countries"
+      },
+      {
+          "word": "gorilla",
+          "hint": "The largest living primate, a heavily built, ground-dwelling ape with a large head, short neck, and broad chest"
+      },
+      {
+          "word": "ape",
+          "hint": "A large primate that lacks a tail, including the gorilla, chimpanzees, orangutan, and gibbons"
+      },
+      {
+          "word": "rabbit",
+          "hint": "A burrowing, gregarious, plant-eating mammal with long ears, long hind legs, and a short tail"
+      },
+      {
+          "word": "squirrel",
+          "hint": "An agile tree-dwelling rodent with a bushy tail, typically feeding on nuts and seeds"
+      },
+      {
+          "word": "hamster",
+          "hint": "A small Eurasian rodent typically kept as a pet or used in scientific research"
+      },
+      {
+          "word": "rat",
+          "hint": "A rodent that resembles a large mouse, typically having a pointed snout and a long, sparsely haired tail"
+      },
+      {
+          "word": "mouse",
+          "hint": "A small rodent with pointed snout, rounded ears, and a long, scaly tail"
+      },
+      {
+          "word": "gopher",
+          "hint": "A burrowing rodent with fur-lined pouches on the outside of the cheeks, found in North and Central America"
+      },
+      {
+          "word": "bat",
+          "hint": "A mainly nocturnal mammal capable of sustained flight, with membranous wings"
+      },
+      {
+          "word": "owl",
+          "hint": "A nocturnal bird of prey with large forward-facing eyes surrounded by facial disks, a hooked beak, and typically a loud call"
+      },
+      {
+          "word": "eagle",
+          "hint": "A large bird of prey with a massive hooked bill and long broad wings, known for its keen sight and powerful soaring flight"
+      },
+      {
+          "word": "hawk",
+          "hint": "A bird of prey with broad rounded wings and a long tail, typically taking prey by surprise with a short chase"
+      },
+      {
+          "word": "falcon",
+          "hint": "A bird of prey with long pointed wings and a notched beak, typically catching prey by diving on it from above"
+      },
+      {
+          "word": "vulture",
+          "hint": "A large bird of prey with a bald head and mainly black plumage, feeding chiefly on carrion"
+      },
+      {
+          "word": "raven",
+          "hint": "A large heavily built crow with mainly black plumage, feeding chiefly on carrion"
+      },
+      {
+          "word": "sparrow",
+          "hint": "A small brownish or grayish bird with a short bill and typically a melodious song, feeding chiefly on seeds"
+      },
+      {
+          "word": "swan",
+          "hint": "A large waterbird with a long flexible neck, short legs, webbed feet, a broad bill, and typically all-white plumage"
+      },
+      {
+          "word": "penguin",
+          "hint": "A large flightless seabird of the southern hemisphere, with black upperparts and white underparts and wings developed into flippers for swimming"
+      },
+      {
+          "word": "ostrich",
+          "hint": "A large flightless swift-running African bird with a long neck, long legs, and two toes on each foot"
+      },
+      {
+          "word": "parrot",
+          "hint": "A brightly colored tropical bird with a curved bill and typically with the ability to mimic human speech"
+      },
+      {
+          "word": "flamingo",
+          "hint": "A tall wading bird with mainly pink or scarlet plumage and long legs and neck"
+      },
+      {
+          "word": "rooster",
+          "hint": "A male domestic fowl, especially a young one"
+      },
+      {
+          "word": "duck",
+          "hint": "A waterbird with a broad blunt bill, short legs, webbed feet, and a waddling gait"
+      },
+      {
+          "word": "turkey",
+          "hint": "A large mainly domesticated bird raised for its meat"
+      },
+      {
+          "word": "goose",
+          "hint": "A waterbird with a long neck, short legs, webbed feet, and a loud honking call"
+      },
+      {
+          "word": "dolphin",
+          "hint": "A small gregarious toothed whale that typically has a beaklike snout and a curved fin on the back"
+      },
+      {
+          "word": "whale",
+          "hint": "A very large marine mammal with a streamlined hairless body, a horizontal tail fin, and a blowhole on top of the head for breathing"
+      },
+      {
+          "word": "shark",
+          "hint": "A long-bodied chiefly marine fish with a cartilaginous skeleton, a prominent dorsal fin, and toothlike scales"
+      },
+      {
+          "word": "octopus",
+          "hint": "A cephalopod mollusk with eight sucker-bearing arms, a soft sac-like body, strong beaklike jaws, and no internal shell"
+      },
+      {
+          "word": "jellyfish",
+          "hint": "A free-swimming marine coelenterate with a jellylike bell- or saucer-shaped body that is typically transparent and has stinging tentacles around the edge"
+      },
+      {
+          "word": "seahorse",
+          "hint": "A small marine fish that has a prehensile tail, an elongated snout, and a head and neck suggestive of a horse"
+      },
+      {
+          "word": "lobster",
+          "hint": "A large marine crustacean with a cylindrical body, stalked eyes, and the first of its five pairs of limbs modified as pincers"
+      },
+      {
+          "word": "crab",
+          "hint": "A marine crustacean with a broad carapace, stalked eyes, and five pairs of legs, the first of which are modified as pincers"
+      },
+      {
+          "word": "starfish",
+          "hint": "A marine echinoderm with a somewhat star-shaped body and typically five arms, which radiate from a central disk"
+      },
+      {
+          "word": "turtle",
+          "hint": "A slow-moving reptile with a shell into which it can retract its head and thick scaly skin"
+      },
+      {
+          "word": "frog",
+          "hint": "A tailless amphibian with a short squat body, moist smooth skin, and very long hind legs for leaping"
+      },
+      {
+          "word": "lizard",
+          "hint": "A reptile that typically has a long body and tail, four legs, movable eyelids, and a rough scaly or spiny skin"
+      },
+      {
+          "word": "snake",
+          "hint": "A long limbless reptile that has no eyelids, a short tail, and jaws that are capable of considerable extension"
+      },
+      {
+          "word": "crocodile",
+          "hint": "A large predatory semiaquatic reptile with long jaws, long tail, short legs, and a horny textured skin"
+      },
+      {
+          "word": "tiger",
+          "hint": "A very large solitary cat with a yellow-brown coat striped with black, native to the forests of Asia but becoming increasingly rare"
+      },
+      {
+          "word": "lion",
+          "hint": "A large tawny-colored cat that lives in prides, found in Africa and northwestern India. The male has a flowing shaggy mane and takes little part in hunting"
+      },
+      {
+          "word": "leopard",
+          "hint": "A large solitary cat that has a fawn or brown coat with black spots, native to the forests of Africa and southern Asia"
+      },
+      {
+          "word": "cheetah",
+          "hint": "A large slender spotted cat found in Africa and parts of Asia. It is the fastest animal on land"
+      },
+      {
+          "word": "rhinoceros",
+          "hint": "A large, heavily built plant-eating mammal with one or two horns on the nose and thick folded skin, native to Africa and southern Asia"
+      },
+      {
+          "word": "elephant",
+          "hint": "A heavy plant-eating mammal with a prehensile trunk, long curved ivory tusks, and large ears, native to Africa and southern Asia"
+      },
+      {
+          "word": "hippopotamus",
+          "hint": "A large thick-skinned semiaquatic African mammal, with massive jaws and large tusks. It is the third-largest living land mammal"
+      },
+      {
+          "word": "giraffe",
+          "hint": "A large African mammal with a very long neck and forelegs, having a coat patterned with brown patches separated by lighter lines"
+      },
+      {
+          "word": "zebra",
+          "hint": "An African wild horse with black-and-white stripes and an erect mane"
+      },
+      {
+          "word": "kangaroo",
+          "hint": "A large plant-eating marsupial with a long powerful tail and strongly developed hind limbs that enable it to travel by leaping"
+      },
+      {
+          "word": "koala",
+          "hint": "A bearlike arboreal Australian marsupial that has thick gray fur and feeds on eucalyptus leaves"
+      },
+      {
+          "word": "panda",
+          "hint": "A large bearlike mammal with characteristic black and white markings, native to certain mountain forests of central and western China. It feeds almost entirely on bamboo"
+      },
+      {
+          "word": "wolf",
+          "hint": "A wild carnivorous mammal of the dog family, living and hunting in packs. It is native to both Eurasia and North America"
+      },
+      {
+          "word": "fox",
+          "hint": "A carnivorous mammal of the dog family with a pointed muzzle and bushy tail, proverbial for its cunning"
+      },
+      {
+          "word": "bear",
+          "hint": "A large, heavy mammal with thick fur and a very short tail. Bears are omnivorous, and they hibernate in winter"
+      },
+      {
+          "word": "monkey",
+          "hint": "A small to medium-sized primate that typically has a long tail, most kinds of which live in trees in tropical countries"
+      },
+      {
+          "word": "gorilla",
+          "hint": "The largest living primate, a heavily built, ground-dwelling ape with a large head, short neck, and broad chest"
+      },
+      {
+          "word": "ape",
+          "hint": "A large primate that lacks a tail, including the gorilla, chimpanzees, orangutan, and gibbons"
+      },
+      {
+          "word": "rabbit",
+          "hint": "A burrowing, gregarious, plant-eating mammal with long ears, long hind legs, and a short tail"
+      },
+      {
+          "word": "squirrel",
+          "hint": "An agile tree-dwelling rodent with a bushy tail, typically feeding on nuts and seeds"
+      },
+      {
+          "word": "hamster",
+          "hint": "A small Eurasian rodent typically kept as a pet or used in scientific research"
+      },
+      {
+          "word": "rat",
+          "hint": "A rodent that resembles a large mouse, typically having a pointed snout and a long, sparsely haired tail"
+      },
+      {
+          "word": "mouse",
+          "hint": "A small rodent with pointed snout, rounded ears, and a long, scaly tail"
+      },
+      {
+          "word": "gopher",
+          "hint": "A burrowing rodent with fur-lined pouches on the outside of the cheeks, found in North and Central America"
+      },
+      {
+          "word": "bat",
+          "hint": "A mainly nocturnal mammal capable of sustained flight, with membranous wings"
+      },
+      {
+          "word": "owl",
+          "hint": "A nocturnal bird of prey with large forward-facing eyes surrounded by facial disks, a hooked beak, and typically a loud call"
+      },
+      {
+          "word": "eagle",
+          "hint": "A large bird of prey with a massive hooked bill and long broad wings, known for its keen sight and powerful soaring flight"
+      },
+      {
+          "word": "hawk",
+          "hint": "A bird of prey with broad rounded wings and a long tail, typically taking prey by surprise with a short chase"
+      },
+      {
+          "word": "falcon",
+          "hint": "A bird of prey with long pointed wings and a notched beak, typically catching prey by diving on it from above"
+      },
+      {
+          "word": "vulture",
+          "hint": "A large bird of prey with a bald head and mainly black plumage, feeding chiefly on carrion"
+      },
+      {
+          "word": "raven",
+          "hint": "A large heavily built crow with mainly black plumage, feeding chiefly on carrion"
+      },
+      {
+          "word": "sparrow",
+          "hint": "A small brownish or grayish bird with a short bill and typically a melodious song, feeding chiefly on seeds"
+      },
+      {
+          "word": "swan",
+          "hint": "A large waterbird with a long flexible neck, short legs, webbed feet, a broad bill, and typically all-white plumage"
       }
-    ]
-  }
-  
+  ]
+}

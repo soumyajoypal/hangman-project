@@ -85,21 +85,23 @@ function reset() {
 
 // Display Result
 function displayRes(res) {
-    const resImg = document.querySelector('.result-img img');
-    const resHeading = document.querySelector('.result-heading');
-    const resText = document.querySelector('.result-text');
-    let word = data.words[ind].word;
-    if (res === false) {
-        resImg.src = `images/lost.gif`;
-        resHeading.innerText = `Sorry!`;
-        resText.innerHTML = `The correct word was: ${word}`;
-    } else {
-        resImg.src = `images/victory.gif`;
-        resHeading.innerText = `Congrats!`;
-        resText.innerHTML = `You found the word: ${word}`;
-    }
-    resultBox.classList.add('visibleResult');
-    document.querySelector('.overlay').style.display = 'block';
+    setTimeout(() => {
+        const resImg = document.querySelector('.result-img img');
+        const resHeading = document.querySelector('.result-heading');
+        const resText = document.querySelector('.result-text');
+        let word = data.words[ind].word;
+        if (res === false) {
+            resImg.src = `images/lost.gif`;
+            resHeading.innerText = `Sorry!`;
+            resText.innerHTML = `The correct word was: ${word}`;
+        } else {
+            resImg.src = `images/victory.gif`;
+            resHeading.innerText = `Congrats!`;
+            resText.innerHTML = `You found the word: ${word}`;
+        }
+        resultBox.classList.add('visibleResult');
+        document.querySelector('.overlay').style.display = 'block';
+    }, '300')
 }
 
 // Make Char for the blanks to fill them
