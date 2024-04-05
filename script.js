@@ -1,3 +1,15 @@
+// Global variables
+let data = [];
+let ind;
+let countGuess;
+let countFills;
+const resultBox = document.querySelector('.displayResult');
+const keyboard = document.querySelector('.hangman-keyboard');
+const guessText = document.querySelector('.guess-text');
+const hangManImg = document.querySelector('.hangman-display img');
+const answer = document.querySelector('.hangman-answer');
+const hint = document.querySelector('.hint .text');
+
 
 // Fetching the words form info.json
 let url = 'info.json';
@@ -26,8 +38,6 @@ async function randWordInd(data) {
 
 // loading the corresponding blanks for the word
 function loadBlanks(word) {
-    const answer = document.querySelector('.hangman-answer');
-    const hint = document.querySelector('.hint .text');
     for (let i = 0; i < word.word.length; i++) {
         const blanks = document.createElement('div');
         blanks.classList.add('blanks');
@@ -37,10 +47,6 @@ function loadBlanks(word) {
     hint.innerHTML = word.hint;
 }
 
-// Global variables
-let data = [];
-let ind;
-let count;
 
 // Loading the word(main)
 async function loadWord() {
@@ -48,13 +54,53 @@ async function loadWord() {
         data = await getWord();
         ind = await randWordInd(data);
         console.log(data.words[ind].word);
+        createKeys();
         loadBlanks(data.words[ind]);
-        count = 0;
+        countGuess = 0;
+        countFills = 0;
     } catch (error) {
         console.error('Error:', error);
     }
 }
 loadWord();
+
+
+// Reset Button
+const resetBtn = document.querySelector('.restart-btn');
+resetBtn.addEventListener('click', () => {
+    reset();
+})
+// Function to reset the Game
+function reset() {
+    resultBox.classList.remove('visibleResult');
+    document.querySelector('.overlay').style.display = 'none';
+    countFills = 0;
+    countFills = 0;
+    keyboard.innerHTML = '';
+    guessText.innerHTML = '0/6';
+    hangManImg.src = `images/hangman-0.svg`;
+    answer.innerHTML = ``;
+    loadWord();
+}
+
+// Display Result
+function displayRes(res) {
+    const resImg = document.querySelector('.result-img img');
+    const resHeading = document.querySelector('.result-heading');
+    const resText = document.querySelector('.result-text');
+    let word = data.words[ind].word;
+    if (res === false) {
+        resImg.src = `images/lost.gif`;
+        resHeading.innerText = `Sorry!`;
+        resText.innerHTML = `The correct word was: ${word}`;
+    } else {
+        resImg.src = `images/victory.gif`;
+        resHeading.innerText = `Congrats!`;
+        resText.innerHTML = `You found the word: ${word}`;
+    }
+    resultBox.classList.add('visibleResult');
+    document.querySelector('.overlay').style.display = 'block';
+}
 
 // Make Char for the blanks to fill them
 function fillBlank(key, blankArray, index) {
@@ -72,19 +118,18 @@ function putKeys(key) {
         const val = value.dataset.blankKey;
         if (val == key) {
             fillBlank(key, blankArray, index);
+            countFills++;
         }
     })
 }
 
-// Counting the number of guesses and updating the hangman
+// countGuessing the number of guesses and updating the hangman
 function guessNumber() {
-    count++;
-    const guessText = document.querySelector('.guess-text');
-    const img = document.querySelector('.hangman-display img');
-    img.src = `images/hangman-${count}.svg`;
-    guessText.innerHTML = `${count}/6`;
-    if (count === 6) {
-        console.log('You Lost');
+    countGuess++;
+    hangManImg.src = `images/hangman-${countGuess}.svg`;
+    guessText.innerHTML = `${countGuess}/6`;
+    if (countGuess === 6) {
+        displayRes(false);
     }
 }
 
@@ -103,13 +148,15 @@ function getKey(key) {
     });
     if (check(key.innerHTML.toLowerCase())) {
         putKeys(key.innerHTML.toLowerCase());
+        if (countFills === data.words[ind].word.length) {
+            displayRes(true);
+        }
         return;
     }
     guessNumber();
 }
 
 // Generating the keyboard
-const keyboard = document.querySelector('.hangman-keyboard');
 function createKeys() {
     for (let i = 97; i <= 122; i++) {
         const key = document.createElement('button');
@@ -121,7 +168,7 @@ function createKeys() {
         })
     }
 }
-createKeys();
+
 
 
 
