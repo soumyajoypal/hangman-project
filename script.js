@@ -149,9 +149,7 @@ function check(key) {
 // making the changes to the key according to the result
 function getKey(key) {
     key.classList.add('active');
-    key.removeEventListener('click', () => {
-        getKey(key);
-    });
+    key.removeEventListener('click', clickHandler);
     if (check(key.innerHTML.toLowerCase())) {
         putKeys(key.innerHTML.toLowerCase());
         if (countFills === data.words[ind].word.length) {
@@ -162,6 +160,10 @@ function getKey(key) {
     guessNumber();
 }
 
+function clickHandler() {
+    getKey(this);
+}
+
 // Generating the keyboard
 function createKeys() {
     for (let i = 97; i <= 122; i++) {
@@ -169,11 +171,10 @@ function createKeys() {
         key.innerHTML = String.fromCharCode(i).toUpperCase();
         key.classList.add('key');
         keyboard.appendChild(key);
-        key.addEventListener('click', () => {
-            getKey(key);
-        })
+        key.addEventListener('click', clickHandler);
     }
 }
+
 
 
 
