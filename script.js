@@ -49,15 +49,18 @@ function loadBlanks(word) {
 
 
 // Loading the word(main)
+async function getRandWord() {
+    ind = await randWordInd(data);
+    console.log(data.words[ind].word);
+    createKeys();
+    loadBlanks(data.words[ind]);
+    countGuess = 0;
+    countFills = 0;
+}
 async function loadWord() {
     try {
         data = await getWord();
-        ind = await randWordInd(data);
-        console.log(data.words[ind].word);
-        createKeys();
-        loadBlanks(data.words[ind]);
-        countGuess = 0;
-        countFills = 0;
+        getRandWord();
     } catch (error) {
         console.error('Error:', error);
     }
@@ -80,7 +83,8 @@ function reset() {
     guessText.innerHTML = '0/6';
     hangManImg.src = `images/hangman-0.svg`;
     answer.innerHTML = ``;
-    loadWord();
+    data.words.splice(ind, 1);
+    getRandWord();
 }
 
 // Display Result
