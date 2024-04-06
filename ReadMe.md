@@ -26,6 +26,6 @@ You can play the game by visiting the following link: [Hangman Game Demo](https:
 
 This game was developed using HTML for structure, CSS for styling, and JavaScript for interactivity.
 
-## License
+## Author
 
-This project is licensed under the [MIT License](LICENSE).
+This project is made by Soumyajoy Pal.
